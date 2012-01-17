@@ -18,21 +18,19 @@
 (ac-config-default)
 
 ;; Yasnippet - force the loading of the custom version of yasnippet
-(require 'yasnippet (concat epy-install-dir "extensions/yasnippet/yasnippet"))
-(load-file (concat epy-install-dir "extensions/snippet-helpers.el"))
+;(require 'yasnippet (concat epy-install-dir "extensions/yasnippet/yasnippet"))
+;(load-file (concat epy-install-dir "extensions/snippet-helpers.el"))
 
 ;; this one is to activate django snippets
-(defun epy-django-snippets ()
-  "Load django snippets"
-  (interactive)
-  (yas/load-directory (concat epy-install-dir "snippets/django"))
-  )
-
-
-(yas/initialize)
-(yas/load-directory (concat epy-install-dir "extensions/yasnippet/snippets"))
-(setq yas/prompt-functions '(yas/dropdown-prompt yas/ido-prompt yas/x-prompt))
-(setq yas/wrap-around-region 'cua)
+;(defun epy-django-snippets ()
+;  "Load django snippets"
+;  (interactive)
+;  (yas/load-directory (concat epy-install-dir "snippets/django"))
+;  )
+; (yas/initialize)
+; (yas/load-directory (concat epy-install-dir "extensions/yasnippet/snippets"))
+; (setq yas/prompt-functions '(yas/dropdown-prompt yas/ido-prompt yas/x-prompt))
+; (setq yas/wrap-around-region 'cua)
 
 ;; Eproject project management with emacs
 ;; (require 'eproject)

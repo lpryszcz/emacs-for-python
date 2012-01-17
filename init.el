@@ -8,8 +8,8 @@
                            buffer-file-name))
   "Installation directory of emacs-for-python"
 )
-
 (add-to-list 'load-path epy-install-dir)
+
 (require 'epy-setup)
 (require 'epy-python)
 (require 'epy-completion)
