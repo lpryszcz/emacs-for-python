@@ -24,20 +24,33 @@
 
 ;; set also the completion for eshell
 (add-hook 'eshell-mode-hook 'ac-eshell-mode-setup)
-;; custom keybindings to use tab, enter and up and down arrows
-(define-key ac-complete-mode-map "\t" 'ac-expand)
-;(define-key ac-complete-mode-map "\M-c" 'ac-expand)
-(global-set-key [(S-iso-lefttab)] 'ac-next)
-(define-key ac-complete-mode-map "\r" 'ac-complete)
-(define-key ac-complete-mode-map "\M-n" 'ac-next)
-(define-key ac-complete-mode-map "\M-p" 'ac-previous)
+;(define-key ac-complete-mode-map "\t" 'ac-expand)
+;(define-key ac-complete-mode-map "\r" 'ac-complete)
+;(define-key ac-complete-mode-map "\M-n" 'ac-next)
+;(define-key ac-complete-mode-map "\M-p" 'ac-previous)
 
+;; custom keybindings to use tab, enter and up and down arrows
+(setq ac-use-menu-map t)
+;; Default settings
+(define-key ac-menu-map "\t" 'ac-expand)
+(define-key ac-menu-map "\C-n" 'ac-next)
+(define-key ac-menu-map "\C-p" 'ac-previous)
 ;; I prefer to have instant suggestions
-(setq ac-auto-show-menu t)
+(setq ac-auto-show-menu 0.01)
 (setq ac-use-quick-help t)
-(setq ac-quick-help-delay 0.5)
+(setq ac-quick-help-delay 0.01)
 ;; Smaller menu
 (setq ac-menu-height 5)
+(setq ac-sources '(ac-source-filename ac-source-features
+                                      ac-source-functions 
+                                      ac-source-variables
+                                      ac-source-symbols 
+                                      ac-source-abbrev 
+                                      ac-source-dictionary
+                                      ac-source-words-in-same-mode-buffers
+                                      ac-source-words-in-buffer
+                                      ))
+
 
 ;; Disabling Yasnippet completion 
 (defun epy-snips-from-table (table)
