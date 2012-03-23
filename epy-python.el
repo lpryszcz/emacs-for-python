@@ -4,9 +4,9 @@
 (require 'python (concat epy-install-dir "extensions/python.el"))
 
 ;; pymacs
-;; (require 'pymacs (concat epy-install-dir "extensions/pymacs.el"))
-(require 'pymacs "/usr/share/emacs/site-lisp/pymacs.el")
-;(require 'pymacs)
+(require 'pymacs (concat epy-install-dir "extensions/pymacs.el"))
+;(require 'pymacs "/usr/share/emacs/site-lisp/pymacs.el")
+(require 'pymacs)
 
 (defun setup-ropemacs ()
   "Setup the ropemacs harness"
