@@ -147,8 +147,8 @@ original" (interactive)
 (delete-selection-mode 1)
 
 ;; highlight current line
-(global-hl-line-mode 1)
-(set-face-background 'hl-line "grey12") ;; Nice color
+;(global-hl-line-mode 1)
+;(set-face-background 'hl-line "grey12") ;; Nice color
 
 ; highlight brackets
 (show-paren-mode t)
