@@ -10,6 +10,10 @@
       nil
     t))
 
+(if (font-exists-p "inconsolata-g")
+    (set-default-font "inconsolata-g")
+  )
+
 ;; avoid Emacs hanging for a while changing default font
 (modify-frame-parameters nil '((wait-for-wm . nil)))
 
@@ -108,5 +112,8 @@
        (setq jit-lock-contextually t)
        (setq jit-lock-context-time 0)
        ))
+
+;(require 'color-theme-zenburn)
+;(color-theme-zenburn)
 
 (provide 'jhc-appearance)

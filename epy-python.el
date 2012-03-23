@@ -4,7 +4,8 @@
 (require 'python (concat epy-install-dir "extensions/python.el"))
 
 ;; pymacs
-(require 'pymacs (concat epy-install-dir "extensions/pymacs.el"))
+;(require 'pymacs (concat epy-install-dir "extensions/pymacs.el"))
+;(require 'pymacs)
 
 (defun setup-ropemacs ()
   "Setup the ropemacs harness"
@@ -97,7 +98,7 @@ The CMDLINE should be something like:
      ;;==================================================
      ;; Ropemacs Configuration
      ;;==================================================
-     (setup-ropemacs)
+     ;(setup-ropemacs)
 
      ;;==================================================
      ;; Virtualenv Commands
