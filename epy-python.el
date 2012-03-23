@@ -4,7 +4,8 @@
 (require 'python (concat epy-install-dir "extensions/python.el"))
 
 ;; pymacs
-;(require 'pymacs (concat epy-install-dir "extensions/pymacs.el"))
+;; (require 'pymacs (concat epy-install-dir "extensions/pymacs.el"))
+(require 'pymacs "/usr/share/emacs/site-lisp/pymacs.el")
 ;(require 'pymacs)
 
 (defun setup-ropemacs ()
@@ -26,7 +27,6 @@
   (setq ropemacs-autoimport-modules '("os" "shutil" "sys" "logging"
 				      "django.*"))
 
- 
 
   ;; Adding hook to automatically open a rope project if there is one
   ;; in the current or in the upper level directory
@@ -108,10 +108,8 @@ The CMDLINE should be something like:
      (autoload 'virtualenv-workon "virtualenv"
        "Activate a Virtual Environment present using virtualenvwrapper" t)
      
-     
      ;; Not on all modes, please
      (add-hook 'python-mode-hook 'flymake-find-file-hook)
-
      
      )
   )

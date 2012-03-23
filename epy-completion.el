@@ -1,7 +1,6 @@
 ;;; epy-completion.el --- A few common completion tricks
 
 ;; Pairing parentheses
-
 ;; All languages:
 ;(setq skeleton-pair t)
 ;(global-set-key "(" 'skeleton-pair-insert-maybe)
@@ -35,6 +34,10 @@
 (define-key ac-menu-map "\t" 'ac-expand)
 (define-key ac-menu-map "\C-n" 'ac-next)
 (define-key ac-menu-map "\C-p" 'ac-previous)
+
+;; Do not complete with RET/Enter
+(define-key ac-completing-map "\r" nil)
+
 ;; I prefer to have instant suggestions
 (setq ac-auto-show-menu t)
 (setq ac-use-quick-help t)

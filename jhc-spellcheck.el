@@ -1,8 +1,9 @@
 (require 'ispell)
-(setq-default ispell-program-name
-              (if (file-executable-p "/usr/bin/hunspell")
-                  "/usr/bin/hunspell"
-                "/usr/bin/aspell"))
+;; (setq-default ispell-program-name
+;;               (if (file-executable-p "/usr/bin/hunspell")
+;;                   "/usr/bin/hunspell"
+;;                 "/usr/bin/aspell"))
+(setq-default ispell-program-name "/usr/bin/aspell")
 
 ;; Default dict is british english
 (ispell-change-dictionary "british")
