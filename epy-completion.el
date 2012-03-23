@@ -36,21 +36,24 @@
 (define-key ac-menu-map "\C-n" 'ac-next)
 (define-key ac-menu-map "\C-p" 'ac-previous)
 ;; I prefer to have instant suggestions
-(setq ac-auto-show-menu 0.01)
+(setq ac-auto-show-menu t)
 (setq ac-use-quick-help t)
-(setq ac-quick-help-delay 0.01)
+(setq ac-quick-help-delay 0.5)
 ;; Smaller menu
 (setq ac-menu-height 5)
-(setq ac-sources '(ac-source-filename ac-source-features
-                                      ac-source-functions 
-                                      ac-source-variables
-                                      ac-source-symbols 
-                                      ac-source-abbrev 
-                                      ac-source-dictionary
-                                      ac-source-words-in-same-mode-buffers
-                                      ac-source-words-in-buffer
-                                      ))
-
+(setq ac-sources '(ac-source-filename 
+                   ac-source-words-in-buffer                   
+                   ac-source-features
+                   ac-source-functions 
+                   ac-source-variables
+                   ac-source-symbols 
+                   ac-source-abbrev 
+                   ac-source-dictionary
+                   ac-source-words-in-same-mode-buffers
+                   ))
+;;A way of delaying processes of flyspell-mode disables auto
+;;completion. You can avoid this problem with the following option
+(ac-flyspell-workaround)
 
 ;; Disabling Yasnippet completion 
 (defun epy-snips-from-table (table)

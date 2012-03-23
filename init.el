@@ -26,7 +26,7 @@
 (require 'template)
 (template-initialize)
 
-(require 'pydb)
+;(require 'pdb)
 
 (setq auto-mode-alist
       (append '(
