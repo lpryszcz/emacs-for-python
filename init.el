@@ -1,3 +1,7 @@
+;jedi
+(add-hook 'python-mode-hook 'jedi:setup)
+(setq jedi:complete-on-dot t)
+
 ;; markdown mode http://jblevins.org/projects/markdown-mode/
 (autoload 'markdown-mode "markdown-mode"
    "Major mode for editing Markdown files" t)
@@ -16,6 +20,7 @@
                            buffer-file-name))
   "Installation directory of emacs-for-python"
 )
+
 (add-to-list 'load-path epy-install-dir)
 
 (require 'epy-setup)
