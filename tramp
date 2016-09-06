@@ -1,4 +1,4 @@
-;; -*- emacs-lisp -*-
+;; -*- emacs-lisp -*- <16/08/05 14:45:48 /home/lpryszcz/.emacs.d/tramp>
 ;; Tramp connection history.  Don't change this file.
 ;; You can delete it, forcing Tramp to reapply the checks.
 
@@ -54,5 +54,26 @@
   ("perl-cwd-realpath" t)
   ("perl" "\\perl")
   ("~" "/home/lpryszcz"))
- (["scp" "jhuerta" "C" nil]
-  nil))
+ (["scp" "lpryszcz" "127.0.0.1#3022" nil nil]
+  ("uname" "Linux 4.4.15-1-grsec")
+  ("test" "test")
+  ("remote-path"
+   ("/bin" "/usr/bin" "/sbin" "/usr/sbin" "/usr/local/bin"))
+  ("remote-shell" "/bin/sh")
+  ("busybox" nil)
+  ("perl" nil)
+  ("ls" "/bin/ls --color=never")
+  ("~" "/home/lpryszcz")
+  ("file-exists" "test -e")
+  ("readlink" nil)
+  ("stat" nil)
+  ("id" "/usr/bin/id")
+  ("gid-integer" 1000))
+ (["scp" "lpryszcz" "ngschool.biocenter.sk" nil nil]
+  ("uname" "Linux 4.4.0-31-generic")
+  ("test" "test")
+  ("remote-path"
+   ("/bin" "/usr/bin" "/sbin" "/usr/sbin" "/usr/local/bin" "/usr/local/sbin"))
+  ("remote-shell" "/bin/sh")
+  ("busybox" nil)
+  ("file-exists" "test -e")))
