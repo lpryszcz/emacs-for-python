@@ -1,7 +1,5 @@
 ;; Open special buffers in new window
-(setq special-display-buffer-names
-      ;'("*Completions*" )
-      )
+;(setq special-display-buffer-names ;'("*Completions*" ) )
 ;; swap 2 windows
 (defun swap-buffers ()
   "Put the buffer from the selected window in next window, and vice versa"
