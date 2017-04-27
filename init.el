@@ -46,7 +46,7 @@
 
 (require 'jhc-backups)
 (require 'jhc-navigation)
-(require 'jhc-buffers)
+;; (require 'jhc-buffers)
 (require 'jhc-spellcheck)
 (require 'jhc-appearance)
 (require 'jhc-orgmode)
