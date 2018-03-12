@@ -1,1 +1,1 @@
-/usr/lib/python2.7/abc.py
+/home/lpryszcz/src/miniconda2/lib/python2.7/abc.py
