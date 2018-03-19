@@ -1,6 +1,6 @@
 #para tener scroll-back
 termcapinfo xterm|xterms|xs|rxvt ti@:te@
-defscrollback 5048
+defscrollback 50480
 ##
 ### detach on hangup
 autodetach on
@@ -23,7 +23,7 @@ caption always "%u%{wk}%?%-Lw%?%{bw}%n*%f %t%?(%u)%?%{wk}%?%+Lw %=  %{mk}host:%H
 #
 termcapinfo xterm ti@:te@
 
-defscrollback 1000
+defscrollback 10000
 
 # Scroll up
 bindkey -d "^[[5S" eval copy "stuff 5\025"
