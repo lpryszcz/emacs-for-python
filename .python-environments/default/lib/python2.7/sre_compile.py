@@ -1,1 +1,1 @@
-/home/lpryszcz/src/miniconda2/lib/python2.7/sre_compile.py
+/usr/lib/python2.7/sre_compile.py

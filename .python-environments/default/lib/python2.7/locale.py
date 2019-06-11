@@ -1,1 +1,1 @@
-/home/lpryszcz/src/miniconda2/lib/python2.7/locale.py
+/usr/lib/python2.7/locale.py
