@@ -1,3 +1,7 @@
+* TO DO after pull
+    - Set as your default ~/.emacs.d ie `mv ~/.emacs.d ~/.emacs.d.bck; mv emacs-for-python ~/.emacs.d
+    - Enable company [[https://github.com/TommyX12/company-tabnine]]
+
 * Welcome to the best collection of emacs extensions ever
 I'm collecting and customizing the perfect environment for python
 developement, using the most beautiful emacs customization to obtain a

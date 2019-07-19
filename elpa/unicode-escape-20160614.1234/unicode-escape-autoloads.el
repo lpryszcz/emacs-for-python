@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "unicode-escape" "unicode-escape.el" (23856
-;;;;;;  58266 109750 410000))
+;;;### (autoloads nil "unicode-escape" "unicode-escape.el" (23857
+;;;;;;  50295 860307 994000))
 ;;; Generated autoloads from unicode-escape.el
 
 (autoload 'unicode-escape "unicode-escape" nil nil nil)
