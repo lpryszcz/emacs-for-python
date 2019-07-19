@@ -36,6 +36,28 @@
   (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 (package-initialize) ;; You might already have this line
 
+
+;; use company-mode in all buffers
+(add-hook 'after-init-hook 'global-company-mode)
+
+;; https://github.com/TommyX12/company-tabnine
+(require 'company-tabnine)
+(add-to-list 'company-backends #'company-tabnine)
+
+;; Trigger completion immediately.
+(setq company-idle-delay 0)
+
+;; Number the candidates (use M-1, M-2 etc to select completions).
+(setq company-show-numbers t)
+
+;; Use the tab-and-go frontend.
+;; Allows TAB to select and complete at the same time.
+(company-tng-configure-default)
+(setq company-frontends
+      '(company-tng-frontend
+        company-pseudo-tooltip-frontend
+        company-echo-metadata-frontend))
+
 (add-to-list 'load-path epy-install-dir)
 
 (require 'epy-setup)
@@ -164,7 +186,7 @@
  '(inverse-video nil)
  '(line-number-display-limit nil)
  '(menu-bar-mode nil)
- '(package-selected-packages (quote (jedi-direx jedi)))
+ '(package-selected-packages (quote (company jedi-direx jedi)))
  '(select-enable-clipboard t)
  '(show-paren-mode t nil (paren))
  '(tool-bar-mode nil)
