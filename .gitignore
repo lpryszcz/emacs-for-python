@@ -3,5 +3,6 @@
 *.pyc
 session.*
 auto-save-list/
+*.dat
 
 
